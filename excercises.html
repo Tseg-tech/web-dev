@@ -1,0 +1,39 @@
+<html>
+    <head
+    ></head>
+    <body>
+        <input id="demo" type="text" />
+    <button>test</button>
+    <script> 
+        let firstname='tsega';
+        function greeting(Name){
+            let element=document.createElement('div');
+            element.innerText=Name;
+            document.body.appendChild(element);
+            console.log('Hello' ,Name);
+        }
+        greeting(firstname);
+        let text="hello world";
+        function toUpper(result){
+            let res=document.createElement('div');
+            result = result.toUpperCase();
+            res.innerText=result;
+            document.body.appendChild(res);
+        }
+        toUpper(text);
+        let length = 1;
+        let str='cm';
+        function convert(centimeter,str){
+        let element=document.createElement('div');
+        centimeter = centimeter*2.54;
+        element.innerText = centimeter;
+        let s=document.createElement('p');
+        s.innerText=str;
+        document.body.appendChild(element);
+        document.body.append(s);
+        }
+        convert(length,'cm');
+        </script>
+    </body>
+    
+</html>
